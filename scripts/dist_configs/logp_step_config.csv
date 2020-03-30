@@ -1,7 +1,7 @@
 name,path
 LogP1,../../../ReLeaSE/data/csv/logp/step/10000/1/RL_gen_logp_step_10000_1_biased.csv
-LogP2,../../../ReLeaSE/data/csv/logp/step/10000/2/RL_gen_logp_step_10000_1_biased.csv
-LogP3,../../../ReLeaSE/data/csv/logp/step/10000/3/RL_gen_logp_step_10000_1_biased.csv
-LogP4,../../../ReLeaSE/data/csv/logp/step/10000/4/RL_gen_logp_step_10000_1_biased.csv
-LogP5,../../../ReLeaSE/data/csv/logp/step/10000/5/RL_gen_logp_step_10000_1_biased.csv
-LogP6,../../../ReLeaSE/data/csv/logp/step/10000/6/RL_gen_logp_step_10000_1_biased.csv
+LogP2,../../../ReLeaSE/data/csv/logp/step/10000/2/RL_gen_logp_step_10000_biased.csv
+LogP3,../../../ReLeaSE/data/csv/logp/step/10000/3/RL_gen_logp_step_10000_biased.csv
+LogP4,../../../ReLeaSE/data/csv/logp/step/10000/4/RL_gen_logp_step_10000_biased.csv
+LogP5,../../../ReLeaSE/data/csv/logp/step/10000/5/RL_gen_logp_step_10000_biased.csv
+LogP6,../../../ReLeaSE/data/csv/logp/step/10000/6/RL_gen_logp_step_10000_biased.csv
