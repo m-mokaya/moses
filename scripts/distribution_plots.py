@@ -68,20 +68,79 @@ if __name__ == "__main__":
             )
 
     for metric_i, metric_name in enumerate(metrics):
-        for model, d in distributions[metric_name].items():
-            dist = wasserstein_distance(distributions[metric_name]['MOSES'], d)
-            sns.distplot(
-                d, hist=False, kde=True,
-                kde_kws={'shade': True, 'linewidth': 3},
-                label='{0} ({1:0.2g})'.format(model, dist))
-        plt.title(metric_name, fontsize=14)
-        plt.legend()
-        plt.tight_layout()
-        plt.savefig(
-            os.path.join(config.img_folder, metric_name+'.pdf')
-        )
-        plt.savefig(
-            os.path.join(config.img_folder, metric_name+'.png'),
-            dpi=250
-        )
-        plt.close()
+        if metric_name == 'weight':
+            for model, d in distributions[metric_name].items():
+                dist = wasserstein_distance(distributions[metric_name]['MOSES'], d)
+                sns.distplot(
+                    d, hist=False, kde=True,
+                    kde_kws={'shade': True, 'linewidth': 3},
+                    label='{0} ({1:0.2g})'.format(model, dist))
+            plt.xlim(0, 1000)
+            plt.title(metric_name, fontsize=14)
+            plt.legend()
+            plt.tight_layout()
+            plt.savefig(
+                os.path.join(config.img_folder, metric_name+'.pdf')
+            )
+            plt.savefig(
+                os.path.join(config.img_folder, metric_name+'.png'),
+                dpi=250
+            )
+            plt.close()
+        elif metric_name == 'logP':
+            for model, d in distributions[metric_name].items():
+                dist = wasserstein_distance(distributions[metric_name]['MOSES'], d)
+                sns.distplot(
+                    d, hist=False, kde=True,
+                    kde_kws={'shade': True, 'linewidth': 3},
+                    label='{0} ({1:0.2g})'.format(model, dist))
+            plt.xlim(-25, 25)
+            plt.title(metric_name, fontsize=14)
+            plt.legend()
+            plt.tight_layout()
+            plt.savefig(
+                os.path.join(config.img_folder, metric_name+'.pdf')
+            )
+            plt.savefig(
+                os.path.join(config.img_folder, metric_name+'.png'),
+                dpi=250
+            )
+            plt.close()
+        elif metric_name == 'SA':
+            for model, d in distributions[metric_name].items():
+                dist = wasserstein_distance(distributions[metric_name]['MOSES'], d)
+                sns.distplot(
+                    d, hist=False, kde=True,
+                    kde_kws={'shade': True, 'linewidth': 3},
+                    label='{0} ({1:0.2g})'.format(model, dist))
+            plt.xlim(0, 8)
+            plt.title(metric_name, fontsize=14)
+            plt.legend()
+            plt.tight_layout()
+            plt.savefig(
+                os.path.join(config.img_folder, metric_name+'.pdf')
+            )
+            plt.savefig(
+                os.path.join(config.img_folder, metric_name+'.png'),
+                dpi=250
+            )
+            plt.close()
+        else:
+            for model, d in distributions[metric_name].items():
+                dist = wasserstein_distance(distributions[metric_name]['MOSES'], d)
+                sns.distplot(
+                    d, hist=False, kde=True,
+                    kde_kws={'shade': True, 'linewidth': 3},
+                    label='{0} ({1:0.2g})'.format(model, dist))
+            plt.title(metric_name, fontsize=14)
+            plt.legend()
+            plt.tight_layout()
+            plt.savefig(
+                os.path.join(config.img_folder, metric_name+'.pdf')
+            )
+            plt.savefig(
+                os.path.join(config.img_folder, metric_name+'.png'),
+                dpi=250
+            )
+            plt.close()
+
