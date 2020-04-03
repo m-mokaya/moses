@@ -125,7 +125,7 @@ if __name__ == "__main__":
                 dpi=250
             )
             plt.close()
-        elif metric_name == 'QED'
+        elif metric_name == 'QED':
             for model, d in distributions[metric_name].items():
                 dist = wasserstein_distance(distributions[metric_name]['MOSES'], d)
                 sns.distplot(
